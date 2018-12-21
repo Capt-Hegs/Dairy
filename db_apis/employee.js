@@ -13,8 +13,13 @@ async function find(context) {
   }
  
   const result = await database.simpleExecute(query, binds);
+
+  const resResult={
+    queryResult:result.rows,
+    queryUsed:query
+  }
  
-  return result.rows;
+  return resResult;
 }
 
 async function del(id) {
