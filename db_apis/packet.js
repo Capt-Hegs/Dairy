@@ -46,7 +46,7 @@ async function Edit(data) {
   "DATES = '"+data.Dates+"',"+
   "PACKETS_MANUFACTURED = '"+data.Packets_manufactured+"',"+
   "COST_PER_PACK = '"+data.Cost_per_pack+"'"+
-  "' where TOTAL_COST = '"+data.Total_cost+"'"
+  " where TOTAL_COST = '"+data.Total_cost+"'"
 
   console.log(editSql)
   const result = await database.simpleExecute(editSql);
