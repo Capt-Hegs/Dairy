@@ -16,7 +16,7 @@ router.route('/provider/edit').post(provider.Edit);
   // .put(provider.put)
   //.delete(provider.delete);
 
-router.route('/distributor/:id?').get(distributor.get);
+router.route('/distributor/show/:id?').get(distributor.get);
 router.route('/distributor/remove/:id?').get(distributor.delete);
   router.route('/distributor/create').post(distributor.Create);
   router.route('/distributor/edit').post(distributor.Edit);
@@ -24,7 +24,7 @@ router.route('/distributor/remove/:id?').get(distributor.delete);
   // .put(distributor.put)
   // .delete(distributor.delete);
 
-router.route('/employee/:id?').get(employee.get);
+router.route('/employee/show/:id?').get(employee.get);
 router.route('/employee/remove/:id?').get(employee.delete);
   router.route('/employee/create').post(employee.Create);
   router.route('/employee/edit').post(employee.Edit);
@@ -40,7 +40,7 @@ router.route('/employee/remove/:id?').get(employee.delete);
   // .put(input.put)
   
 
-router.route('/milk/:id?').get(milk.get);
+router.route('/milk/show/:id?').get(milk.get);
 router.route('/milk/remove/:id?').get(milk.delete);
   router.route('/milk/create').post(milk.Create);
   router.route('/milk/edit').post(milk.Edit);
@@ -48,7 +48,7 @@ router.route('/milk/remove/:id?').get(milk.delete);
   // .put(milk.put)
   // .delete(milk.delete);
 
-router.route('/packet/:id?').get(packet.get);
+router.route('/packet/show/:id?').get(packet.get);
 router.route('/packet/remove/:id?').get(packet.delete);
   router.route('/packet/create').post(packet.Create);
   router.route('/packet/edit').post(packet.Edit);
@@ -56,7 +56,7 @@ router.route('/packet/remove/:id?').get(packet.delete);
   // .put(packet.put)
   // .delete(packet.delete);
 
-router.route('/money/:id?').get(money.get);
+router.route('/money/show/:id?').get(money.get);
 router.route('/money/remove/:id?').get(money.delete);
   router.route('/money/create').post(money.Create);
   router.route('/money/edit').post(money.Edit);
