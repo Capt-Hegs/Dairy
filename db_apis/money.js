@@ -48,7 +48,7 @@ async function Edit(data) {
   "TOTAL_INCOMING = '"+data.Total_incoming+"',"+
   "TOTAL_PAYMENT_FOR_MILK = '"+data.Total_payment_for_milk+"',"+
   "TOTAL_PAYMENT_FOR_PACKETS = '"+data.Total_payment_for_packets+"',"+
-  "TOTAL_OUTGONIG = '"+data.Total_outgoing+"',"+
+  "TOTAL_OUTGOING = '"+data.Total_outgoing+"',"+
   "PROFIT = '"+data.Profit+"' where SL_NO = '"+data.Sl_no+"'"
 
   console.log(editSql)
